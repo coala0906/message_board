@@ -1,0 +1,1 @@
+session adm_name為空值mid傳入值為空值

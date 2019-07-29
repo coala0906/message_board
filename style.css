@@ -1,0 +1,209 @@
+html{
+    background:url(./img/bg.jpg) no-repeat center center; min-height:100%;
+    background-size:cover;
+}
+#login_block{
+
+    margin: 0px 0px;
+    margin-top: 100px;
+    padding: 0px 0px 0px 250px;
+    font-family: arial;
+    
+}
+#logout_block{
+ 
+    margin: 0px 0px;
+    margin-top: 100px;
+    padding: 0px 0px 0px 400px;
+    font-family: arial;
+    
+}
+#userpost_form_block{
+    background: url(./img/lo_bg.png) no-repeat;
+   
+    margin-top: 0px;
+    padding: 0px 0px 0px 100px;
+    font-family: arial;
+}
+#submit,
+#submit2{
+    background: #5A2626;
+    border: 0px;
+    color: white;
+    padding: 5px 10px;
+    width: 225px;
+    margin:10px 5px;
+    font-size: 18px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;cursor: pointer;
+}
+#button_s{
+    background: #5A2626;
+    border: 0px;
+    color: white;
+    padding: 5px 10px;
+    width: 120px;
+    margin-top: 5px;
+    font-size: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;cursor: pointer;
+}
+#error_msg{
+    width: 224px;
+    background: #525150;
+    display: block;
+    color: white;
+    padding: 0px 10px;
+    font-size: 12px;
+    margin: 1px;
+    line-height: 26px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#error_msg_block{
+    margin: 22px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    top: 50%;
+    left: 41%;
+}
+#f_error_msg_block{
+    margin: 0px;
+    position: absolute;
+    top: 18%;
+    left: 35%;
+}
+input[type=text],
+input[type=password]{
+    border: 1px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    -moz-box-shadow: 3px 3px 5px #000000;
+    -webkit-box-shadow: 2px 2px 3px #424242;
+    box-shadow: 2px 2px 2px #5A5A5A;width: 231px;
+}
+label{
+    width:auto !important;
+    width: 100px;
+    height:25px;
+    display: block;
+    padding: 0px 0px;
+}
+#loading_div,
+#login_success,
+#loadingout_div{
+    text-align: center;
+    width:1000px;
+    height:50px;
+    margin: 0px 400px;
+    margin-top: 500px;
+    padding:0px 0px 0px 0px;
+}
+#loading_div1{
+        text-align: center;
+        width:auto !important;
+        height:auto !important;
+        margin-top: 0px;
+        padding:450px 200px 0px 0px;
+}
+#login_success{width: 269px;}
+#login_showname{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+#ft{
+    font-family: arial;
+    font-size: 10px;
+    text-align: center;
+}
+#admlogin_block{
+    width: 317px;
+    height: 400px;
+    margin: 0px auto;
+    margin-top: 300px;
+    padding: 0px 0px 0px 0px;
+    font-family: arial;
+    vertical-align:bottom;
+}
+#admreg_block{
+    width: 231px;
+    height: 600px;
+    margin: 0px auto;
+    margin-top: 300px;
+    padding: 0px 320px 0px 0px;
+    font-family: arial;
+    vertical-align:bottom;
+}
+#memberlist_block{
+    width: 800px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 0px 0px 0px 100px;
+    font-family: arial;
+}
+#admlogout_block{
+    width: 900px;
+    height: 50px;
+    margin: 0px 0px;
+    margin-top: 50px;
+    padding: 0px 0px 0px 200px;
+    font-family: arial;
+    vertical-align:bottom;
+}
+#admlogout_block_fuclist{
+    width: 350px;
+    height: 50px;
+    margin: 0px 700px;
+    margin-top: 50px;
+    padding: 0px 0px 0px 0px;
+    font-family: arial;
+    vertical-align:bottom;
+}
+#memberdata_block{
+    width: 231px;
+    height:auto !important;
+    height: 400px;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding: 0px 0px 0px 0px;
+    font-family: arial;
+}
+#functionslct_block{
+    width: 800px;
+    height: 400px;
+    margin: 0px 0px;
+    margin-top: 200px;
+    padding: 0px 0px 0px 700px;
+    font-family: arial;
+}
+#messagelist_block{
+    margin-top: 50px;
+    padding: 0px 0px 0px 0px;
+ 
+}
+#msglist_block{
+    margin-top: 50px;
+    padding: 0px 0px 0px 100px;
+}
+#erroralert_block{
+    width: auto !important;
+    height:auto !important;
+    padding: 0px 0px 0px 500px;
+}
+#userreg_block{
+    width: 400px;
+    height:600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -200px;
+}
+#table{
+    table-layout:fixed;
+}

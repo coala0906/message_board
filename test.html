@@ -1,0 +1,72 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ /> 
+<title>彈出確認框始終位於視窗的中間位置的測試</title> 
+<style type=”text/css”> 
+.mask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.5; filter: alpha(opacity=50); display: none; z-index: 99; } 
+.mess { position: absolute; display: none; width: 250px; height: 100px; border: 1px solid #ccc; background: #ececec; text-align: center; z-index: 101; } 
+</style> 
+<script type=”text/javascript” src=”jquery-1.6.1.min.js”></script> 
+<script type=”text/javascript”> 
+$(document).ready(function() { 
+$(‘.btn’).click(function() { 
+$(‘.mask’).css({‘display’: ‘block’}); 
+center($(‘.mess’)); 
+check($(this).parent(), $(‘.btn1’), $(‘.btn2’)); 
+}); 
+// 居中 
+function center(obj) { 
+var screenWidth = $(window).width(), screenHeight = $(window).height(); //當前瀏覽器視窗的 寬高 
+var scrolltop = $(document).scrollTop();(),//獲取當前視窗距離頁面頂部高度 
+var objLeft = (screenWidth – obj.width())/2 ; 
+var objTop = (screenHeight – obj.height())/2 scrolltop; 
+obj.css({left: objLeft ‘px’, top: objTop ‘px’,’display’: ‘block’}); 
+//瀏覽器視窗大小改變時 
+$(window).resize(function() { 
+screenWidth = $(window).width(); 
+screenHeight = $(window).height(); 
+scrolltop = $(document).scrollTop(); 
+objLeft = (screenWidth – obj.width())/2 ; 
+objTop = (screenHeight – obj.height())/2 scrolltop; 
+obj.css({left: objLeft ‘px’, top: objTop ‘px’,’display’: ‘block’}); 
+}); 
+//瀏覽器有滾動條時的操作、 
+$(window).scroll(function() { 
+screenWidth = $(window).width(); 
+screenHeight = $(widow).height(); 
+scrolltop = $(document).scrollTop(); 
+objLeft = (screenWidth – obj.width())/2 ; 
+objTop = (screenHeight – obj.height())/2 scrolltop; 
+obj.css({left: objLeft ‘px’, top: objTop ‘px’,’display’: ‘block’}); 
+}); 
+} 
+//確定取消的操作 
+function check(obj, obj1, obj2) { 
+obj1.click(function() { 
+obj.remove(); 
+closed($(‘.mask’), $(‘.mess’)); 
+}); 
+obj2.click(function() { 
+closed($(‘.mask’), $(‘.mess’)); 
+}) ; 
+} 
+// 隱藏 的操作 
+function closed(obj1, obj2) { 
+obj1.hide(); 
+obj2.hide(); 
+} 
+}); 
+</script> 
+</head> 
+<body> 
+<input type=”button” class=”btn” value=”btn”/> 
+<div>彈出確認框始終位於視窗的中間位置的測試</div> 
+<div class=”mask”></div> 
+<div class=”mess”> 
+<p>確定要刪除嗎？</p> 
+<p><input type=”button” value=”確定” class=”btn1″/> 
+<input type=”button” value=”取消”class=”btn2″/></p> 
+</div> 
+</body> 
+</html>
